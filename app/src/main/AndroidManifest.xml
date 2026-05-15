@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hallisanthe.digital">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_report_image"
+        android:label="@string/app_name"
+        android:roundIcon="@android:drawable/ic_menu_report_image"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HalliSanteDigital"
+        tools:targetApi="31">
+        
+        <!-- Note: google-services.json is required in app/ folder -->
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UploadActivity"
+            android:label="@string/sell_product"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ProductDetailActivity"
+            android:label="@string/product_details"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

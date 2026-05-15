@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- app/src/main/res/values/strings.xml -->
+<resources>
+    <string name="app_name">Halli-Sante Digital</string>
+    <string name="browse">Browse</string>
+    <string name="sell">Sell</string>
+    <string name="search_hint">Search products...</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Price (₹)</string>
+    <string name="upload">Upload Product</string>
+    <string name="pick_image">Pick Product Image</string>
+    <string name="sell_product">Sell Your Craft</string>
+    <string name="product_details">Product Details</string>
+    <string name="send_message">Send Mock Message</string>
+    <string name="message_sent">Mock message sent to artisan!</string>
+    <string name="no_products">No products found in the market.</string>
+    <string name="error_upload">Failed to upload product.</string>
+    <string name="success_upload">Product listed successfully!</string>
+    <string name="permission_denied">Permission denied. Cannot proceed.</string>
+    <string name="compressing">Compressing image...</string>
+    <string name="uploading">Uploading to market...</string>
+</resources>

@@ -1,0 +1,32 @@
+/*
+  Halli-Santhe Digital: Firebase Integration Instructions
+
+  1. Create a project in Firebase Console (https://console.firebase.google.com/).
+  2. Add an Android App with package name: com.hallisanthe.digital
+  3. Download 'google-services.json' and place it in the 'app/' directory of this project.
+  4. Enable Firestore Database and Cloud Storage in your Firebase project.
+
+  --- Cloud Firestore Security Rules ---
+  
+  rules_version = '2';
+  service cloud.firestore {
+    match /databases/{database}/documents {
+      match /products/{product} {
+        allow read: if true;
+        allow write: if true; // In production, add auth checks
+      }
+    }
+  }
+
+  --- Cloud Storage Security Rules ---
+
+  rules_version = '2';
+  service firebase.storage {
+    match /b/{bucket}/o {
+      match /products/{allPaths=**} {
+        allow read: if true;
+        allow write: if true; // In production, add auth checks
+      }
+    }
+  }
+*/
